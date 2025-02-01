@@ -12,3 +12,35 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<!-- 分頁按鈕 -->
+<div class="pagination">
+  <a href="#" class="prev">上一頁</a>
+  <a href="#" class="page active">1</a>
+  <a href="#" class="page">2</a>
+  <a href="#" class="page">3</a>
+  <a href="#" class="next">下一頁</a>
+</div>
+
+<style>
+.pagination {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: #333;
+}
+.pagination a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+.pagination a:hover:not(.active) {
+  background-color: #f0f0f0;
+}
+</style>
